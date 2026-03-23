@@ -17,6 +17,11 @@ $echo "este mensaje es secreto" > doc_no_cifrado.txt
 #este comando encrypta el archivo que creamos usando el hash de nuestro compañero y enviandoselo
 gpg --output doc_cifrado.txt --encrypt --recipient CB9CBC531023778D3B81C90EA13BBAAB40C5844C doc_no_cifrado.txt
 gpg: 29A8B0E9948BABB9: There is no assurance this key belongs to the named user
+#verifica lo que hay dentro del archivo
+cat doc_cifrado.txt
+#este comando nos ayuda a desencriptar el mensaje de mi compañero
+gpg --decrypt amigo_doc_cifrado.txt
+
 
 
 
