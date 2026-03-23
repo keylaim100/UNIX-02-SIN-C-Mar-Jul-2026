@@ -21,6 +21,9 @@ gpg: 29A8B0E9948BABB9: There is no assurance this key belongs to the named user
 cat doc_cifrado.txt
 #este comando nos ayuda a desencriptar el mensaje de mi compañero
 gpg --decrypt amigo_doc_cifrado.txt
+#para firmar un documento
+gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt
+
 
 
 
