@@ -12,6 +12,8 @@ gpg --list-secret-keys --keyid-format=long
 gpg --armor --export-secret-keys 08F019E40AC3E0AE
 #importar llave publica de mi compañero
 gpg --import amigo_llave_publica.asc
+#redirecciona el mensaje que se imprime en la pantalla a un archivo 
+$echo "este mensaje es secreto" > doc_no_cifrado.txt
 
 
 
