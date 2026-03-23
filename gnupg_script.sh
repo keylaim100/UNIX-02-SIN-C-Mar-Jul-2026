@@ -10,6 +10,8 @@ gpg --list-keys #lista todas las llaves
 gpg --list-secret-keys --keyid-format=long 
 #exporta la llave privada 
 gpg --armor --export-secret-keys 08F019E40AC3E0AE
+#importar llave publica de mi compañero
+gpg --import amigo_llave_publica.asc
 
 
 
