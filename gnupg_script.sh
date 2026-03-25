@@ -27,6 +27,8 @@ gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt
 cat doc_no_cifrado_firmado.txt
 #verifica la firma de mi compañero
 gpg --verify darwin_doc_no_cifrado_firmado.txt
+#comando par darle voto de confianza a mi compañero
+gpg --edit-key CB9CBC531023778D3B81C90EA13BBAAB40C5844C
 
 
 
