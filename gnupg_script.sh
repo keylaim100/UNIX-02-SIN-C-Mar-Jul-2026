@@ -25,6 +25,9 @@ gpg --decrypt amigo_doc_cifrado.txt
 gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt
 #comprueba la creacion del documento y el contenido
 cat doc_no_cifrado_firmado.txt
+#verifica la firma de mi compañero
+gpg --verify darwin_doc_no_cifrado_firmado.txt
+
 
 
 
