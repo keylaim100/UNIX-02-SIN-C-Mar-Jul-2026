@@ -39,7 +39,8 @@ gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt
 gpg --verify darwin_doc_no_cifrado_firmado_binario.txt
 #se firma el documento y se separa la firma del documento
 gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.txt
-
+#se valida el archivo y la firma de mi compañero
+gpg --verify darwin_firma_separada_doc_no_cifrado.sig darwin_doc_no_cifrado_firmado.txt
 
 
 
