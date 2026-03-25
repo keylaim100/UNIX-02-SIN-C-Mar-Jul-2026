@@ -23,6 +23,9 @@ cat doc_cifrado.txt
 gpg --decrypt amigo_doc_cifrado.txt
 #para firmar un documento
 gpg --output doc_no_cifrado_firmado.txt --clearsign doc_no_cifrado.txt
+#comprueba la creacion del documento y el contenido
+cat doc_no_cifrado_firmado.txt
+
 
 
 
