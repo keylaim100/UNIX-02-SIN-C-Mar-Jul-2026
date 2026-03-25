@@ -45,7 +45,8 @@ gpg --verify darwin_firma_separada_doc_no_cifrado.sig darwin_doc_no_cifrado_firm
 gpg --output doc_cifrado_y_firmado.txt --encrypt --sign --recipient CB9CBC531023778D3B81C90EA13BBAAB40C5844C doc_no_cifrado.txt
 #se desencriptar el documento enviado y se verfifica su firma al mismo tiempo
 gpg --output doc_cifrado_y_firmado_descifrado_y_validado.txt --decrypt darwin_doc_cifrado_y_firmado.txt 
-
+#se comprueba el mensaje del archivo
+cat doc_cifrado_y_firmado_descifrado_y_validado.txt
 
 
 
