@@ -35,6 +35,9 @@ gpg --sign-key A13BBAAB40C5844C
 gpg --verify darwin_doc_no_cifrado_firmado.txt
 #firmar el documento en formato binario
 gpg --output doc_no_cifrado_firmado_binario.txt --sign doc_no_cifrado.txt
+#verifica la firma en binario de mi compañero
+gpg --verify darwin_doc_no_cifrado_firmado_binario.txt
+
 
 
 
