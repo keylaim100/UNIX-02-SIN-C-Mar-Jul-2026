@@ -31,6 +31,9 @@ gpg --verify darwin_doc_no_cifrado_firmado.txt
 gpg --edit-key CB9CBC531023778D3B81C90EA13BBAAB40C5844C
 #comando que firma la clave para corroborar mi decision
 gpg --sign-key A13BBAAB40C5844C
+#se verifica el documento firmado por mi compañero
+gpg --verify darwin_doc_no_cifrado_firmado.txt
+
 
 
 
