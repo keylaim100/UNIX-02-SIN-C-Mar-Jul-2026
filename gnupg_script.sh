@@ -29,6 +29,9 @@ cat doc_no_cifrado_firmado.txt
 gpg --verify darwin_doc_no_cifrado_firmado.txt
 #comando par darle voto de confianza a mi compañero
 gpg --edit-key CB9CBC531023778D3B81C90EA13BBAAB40C5844C
+#comando que firma la clave para corroborar mi decision
+gpg --sign-key A13BBAAB40C5844C
+
 
 
 
