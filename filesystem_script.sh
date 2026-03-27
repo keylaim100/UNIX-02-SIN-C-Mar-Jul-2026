@@ -26,3 +26,5 @@ cd /bin   ls #to check
 # it is verified that the execution of the C file in any directory
 cd /home    saludo_bin 
 cd /workspace   ls     saludo_bin 
+# to see which directory I am in
+pwd 
