@@ -20,3 +20,6 @@ ls
 cd /workspaces/UNIX-02-SIN-C-Mar-Jul-2026/
 #compiles the C file and creates an executable file named saludo_bin
 gcc saludo.c -o saludo_bin
+# mv: move files and directories to bin  cp: copy files and directories to bin
+sudo mv saludo_bin /bin #sudo: super user do 
+cd /bin   ls #to check
