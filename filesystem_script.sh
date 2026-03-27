@@ -28,3 +28,6 @@ cd /home    saludo_bin
 cd /workspace   ls     saludo_bin 
 # to see which directory I am in
 pwd 
+# show me what type of directories I have /: directory *:executable file 
+ls -F
+ 
