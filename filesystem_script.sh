@@ -32,3 +32,9 @@ pwd
 ls -F
 # shows the inode number of each file
 ls -i
+# a file is created with the message "Holiii"
+echo "Holiii" > test.txt+
+# the file is reviewed and executed
+ls      cat test.txt
+# state of how a file is stored
+ stat test.txt 
