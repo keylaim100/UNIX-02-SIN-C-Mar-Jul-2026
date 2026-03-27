@@ -28,6 +28,7 @@ cd /home    saludo_bin
 cd /workspace   ls     saludo_bin 
 # to see which directory I am in
 pwd 
-# show me what type of directories I have /: directory *:executable file 
+# show me what type of directories I have /: directory *:executable file @: symbolic links
 ls -F
- 
+# shows the inode number of each file
+ls -i
