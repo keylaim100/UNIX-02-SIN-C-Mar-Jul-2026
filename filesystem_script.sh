@@ -23,3 +23,6 @@ gcc saludo.c -o saludo_bin
 # mv: move files and directories to bin  cp: copy files and directories to bin
 sudo mv saludo_bin /bin #sudo: super user do 
 cd /bin   ls #to check
+# it is verified that the execution of the C file in any directory
+cd /home    saludo_bin 
+cd /workspace   ls     saludo_bin 
