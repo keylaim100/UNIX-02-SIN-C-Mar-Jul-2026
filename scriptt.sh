@@ -13,3 +13,14 @@ lsblk -f # It displays the disk structure, UUIDs (unique partition identifier), 
 loop # it creates a loop devide
 # conditional test, asks if the directory '/sys/firmware/efi' exists
 [ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS" #-d check if it's a directory
+
+echo "mi archivo" > test.txt
+stat test.txt #Look at the blocks that the file uses.
+#  File: test.txt
+#  Size: 11              Blocks: 8          IO Block: 4096   regular file
+#Device: 7,4     Inode: 1573133     Links: 1
+#Access: (0666/-rw-rw-rw-)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
+#Access: 2026-03-30 15:48:45.902930503 +0000
+#Modify: 2026-03-30 15:48:45.902930503 +0000
+#Change: 2026-03-30 15:48:45.902930503 +0000
+# Birth: 2026-03-30 15:48:45.902930503 +0000
