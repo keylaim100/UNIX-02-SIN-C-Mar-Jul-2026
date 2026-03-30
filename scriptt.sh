@@ -8,6 +8,8 @@ sudo apt install
 pip install numpy
 # full report and organization of the disks
 sudo parted -l && echo -e "\n--- \n" && lsblk -f && echo -e "\n --- \n"
-parted -l # muestra las particones de los discos
-lsblk -f # muestra la estructura de los discos, UUIDs (identificador unico de la particion) y espacios disponibles
+parted -l # It shows the disk partitions.
+lsblk -f # It displays the disk structure, UUIDs (unique partition identifier), and available space.
 loop # it creates a loop devide
+# conditional test, asks if the directory '/sys/firmware/efi' exists
+[ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS" #-d check if it's a directory
