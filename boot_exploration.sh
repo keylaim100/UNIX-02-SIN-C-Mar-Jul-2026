@@ -53,5 +53,13 @@ man git-clone
 # r-x: permissions for group
 # r-- permissions for others
 
+#change permissions
+chmod +x script.sh
+chmod u+x script.sh
+chmod o-r secreto.txt
+chmod u+rw,go-rwx privado
+# - to remove
+# + to add
+# , to add operation
 
 
