@@ -17,9 +17,16 @@ LICENSE     darwin_doc_cifrado_y_firmado.txt  doc_cifrado.txt                   
 .gitignore  boot_exploration.sh               darwin_firma_separada_doc_no_cifrado.sig   doc_no_cifrado_firmado.txt
 LICENSE     darwin_doc_cifrado_y_firmado.txt  doc_cifrado.txt                            doc_no_cifrado_firmado_binario.txt
 
-# list all permissions, users, etc
+# list all permissions, users, hidden files, etc
 # the three do the same as me
 ls -l -a -h
 ls -l -ah
 ls -lah
+
+#interprets as option
+mkdir -rf
+#correct option to create the directory
+mkdir -- -rf
+#to delete the directory
+rmdir -- -rf
 
