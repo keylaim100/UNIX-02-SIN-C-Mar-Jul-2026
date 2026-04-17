@@ -42,6 +42,16 @@ man git-clone
 #           Create a shallow clone with a history truncated to the specified number of commits. Implies --single-branch unless --no-single-branch is given to fetch the
 #           histories near the tips of all branches. If you want to clone submodules shallowly, also pass --shallow-submodules.
 
+#permissions
+#u g o (user) (groups (others)
+#r w x (read) (write) (execute)
 
-#ugo (user groups others)
-#rwx (read write execute)
+-rw-rw-rw- 1 codespace root      34523 Apr 17 14:08 LICENSE
+
+# -: normal file d: directory l: symbolic link
+#rwx: permissions for user (read) (write) (execute)
+# r-x: permissions for group
+# r-- permissions for others
+
+
+
