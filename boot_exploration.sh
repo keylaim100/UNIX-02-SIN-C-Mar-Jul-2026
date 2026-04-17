@@ -34,3 +34,14 @@ rmdir -- -rf
 ls --help
 # For COMPLETE NAVIGATION MENU: /(TEXT TO SEARCH) "n" FORWARD "N" BACK, q TO EXIT
 man ls
+
+
+man git-clone
+
+# --depth <depth>
+#           Create a shallow clone with a history truncated to the specified number of commits. Implies --single-branch unless --no-single-branch is given to fetch the
+#           histories near the tips of all branches. If you want to clone submodules shallowly, also pass --shallow-submodules.
+
+
+#ugo (user groups others)
+#rwx (read write execute)
