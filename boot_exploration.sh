@@ -76,3 +76,10 @@ sudo sh -c 'echo "chao" >> /etc/archivo_protegido'
 #sudo runs something as root
 #sh opens a shell
 #-c tells the shell that everything in single quotes should be interpreted by that root shell
+
+#open a login shell as the root user temporarily
+sudo -i
+#to go out
+exit
+#switch to the root user 
+sudo su
