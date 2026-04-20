@@ -83,3 +83,8 @@ sudo -i
 exit
 #switch to the root user 
 sudo su
+
+#CONTAINS THE PATH TO THE HOME DIRECTORY 
+echo "$HOME"
+#SHOWS IT AS A TEXT, PRINTS THE STRING
+echo '$HOME'
