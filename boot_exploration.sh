@@ -43,10 +43,10 @@ man git-clone
 #           histories near the tips of all branches. If you want to clone submodules shallowly, also pass --shallow-submodules.
 
 #permissions
-#u g o (user) (groups (others)
+#u g o (user) (groups) (others)
 #r w x (read) (write) (execute)
 
--rw-rw-rw- 1 codespace root      34523 Apr 17 14:08 LICENSE
+#-rw-rw-rw- 1 codespace root      34523 Apr 17 14:08 LICENSE
 
 # -: normal file d: directory l: symbolic link
 #rwx: permissions for user (read) (write) (execute)
@@ -69,3 +69,10 @@ sudo echo "hola" > /etc/archivo_protegido # It does not give permission because 
 # The Tee is like a pipe, information enters and splits into two paths
 echo "hola" | sudo tee /etc/archivo_protegido > /dev/null # /dev/null prevents it from appearing in the terminal 
 echo "hola" | sudo tee /etc/archivo_protegido # Here "hello" is displayed on the screen
+
+#launch a whole shell with sudo (shell: command interpreter)
+#>> adds at the end
+sudo sh -c 'echo "chao" >> /etc/archivo_protegido'
+#sudo runs something as root
+#sh opens a shell
+#-c tells the shell that everything in single quotes should be interpreted by that root shell
