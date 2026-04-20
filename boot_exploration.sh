@@ -97,3 +97,9 @@ ls -l hola.sh
 chmod +x hola.sh # Wth this the execution permissions were given to it
 ls -l hola.sh
 ./hola.sh
+
+#use of sudo
+ls /etc #it doesn't need it because it's public
+touch /etc/prueba.txt #if it is needed because it belongs to root and does not allow normal users to write
+mkdir ~/mi_carpeta #it doesn't need
+apt install cowsay #if needed, installing packages touches system addresses
