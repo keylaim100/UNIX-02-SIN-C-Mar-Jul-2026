@@ -88,3 +88,12 @@ sudo su
 echo "$HOME"
 #SHOWS IT AS A TEXT, PRINTS THE STRING
 echo '$HOME'
+
+echo '#!/bin/sh' > hola.sh #Create the file hola.sh and write the shebang in its first line
+echo 'echo "Hola desde mi primer script"' >> hola.sh #add at the end the instruction to print the message "Hola desde mi primer script
+cat hola.sh
+./hola.sh #I didn't work here because we didn't have execution permissions
+ls -l hola.sh
+chmod +x hola.sh # Wth this the execution permissions were given to it
+ls -l hola.sh
+./hola.sh
