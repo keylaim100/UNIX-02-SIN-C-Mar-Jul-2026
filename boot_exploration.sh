@@ -66,5 +66,6 @@ chmod u+rw,go-rwx privado
 sudo #(super user do)
 sudo echo "hola" > /etc/archivo_protegido # It does not give permission because sudo is executed on the command that is next to it
 
-
-
+# The Tee is like a pipe, information enters and splits into two paths
+echo "hola" | sudo tee /etc/archivo_protegido > /dev/null # /dev/null prevents it from appearing in the terminal 
+echo "hola" | sudo tee /etc/archivo_protegido # Here "hello" is displayed on the screen
