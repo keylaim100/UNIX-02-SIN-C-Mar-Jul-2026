@@ -103,3 +103,16 @@ ls /etc #it doesn't need it because it's public
 touch /etc/prueba.txt #if it is needed because it belongs to root and does not allow normal users to write
 mkdir ~/mi_carpeta #it doesn't need
 apt install cowsay #if needed, installing packages touches system addresses
+
+#read = 4 
+#write = 2
+#execution = 1
+#no permission = 0
+
+#permissions
+touch prueba.txt
+chmod 600 prueba.txt #permissions user: read and write, group: nothing, others: nothing
+ls -l prueba.txt
+chmod 755 prueba.txt #permissions user: read, write and eexcution, group: read and execution, others: read and execution
+ls -l prueba.txt
+
