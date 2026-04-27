@@ -131,6 +131,8 @@ sudo setfacl -bnR .
 
 
 umask 027 #027 is subtracted from the base permissions of files and directories, which are 666 and 777
+#666-027=640
+#777-027=750
 touch archivo2
 mkdir directorio2
 ls -l
@@ -138,3 +140,13 @@ ls -l
 #result
 #-rw-r----- 1 codespace codespace     0 Apr 27 15:18 archivo2
 #drwxr-x--- 2 codespace codespace  4096 Apr 27 15:18 directorio2
+
+umask 077 #027 is subtracted from the base permissions of files and directories, which are 666 and 777
+#666-077=600
+#777-077=700
+touch secreto.txt
+mkdir privado
+
+#result
+#-rw------- 1 codespace codespace     0 Apr 27 15:28 secreto.txt
+#drwx------ 2 codespace codespace  4096 Apr 27 15:27 privado
