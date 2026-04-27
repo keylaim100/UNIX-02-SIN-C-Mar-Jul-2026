@@ -116,3 +116,15 @@ ls -l prueba.txt
 chmod 755 prueba.txt #permissions user: read, write and eexcution, group: read and execution, others: read and execution
 ls -l prueba.txt
 
+#define the default permissions that are removed when creating files or directories
+umask 
+
+#AI is not used because it can make us dizzy; that is why we use the experience of other developers to solve problems, example page: stackoverflow
+#We use the issue section to see the problems that exist in the projects and be able to solve them ourselves
+
+
+sudo apt update #update package list
+sudo apt upgrade #install recent versions of the packages
+sudo apt-get install acl
+sudo chown -R $(whoami) . #This command uses root privileges to recursively change the ownership
+sudo setfacl -bnR .
