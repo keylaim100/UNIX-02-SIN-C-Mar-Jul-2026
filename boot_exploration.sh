@@ -128,3 +128,13 @@ sudo apt upgrade #install recent versions of the packages
 sudo apt-get install acl
 sudo chown -R $(whoami) . #This command uses root privileges to recursively change the ownership
 sudo setfacl -bnR .
+
+
+umask 027 #027 is subtracted from the base permissions of files and directories, which are 666 and 777
+touch archivo2
+mkdir directorio2
+ls -l
+
+#result
+#-rw-r----- 1 codespace codespace     0 Apr 27 15:18 archivo2
+#drwxr-x--- 2 codespace codespace  4096 Apr 27 15:18 directorio2
