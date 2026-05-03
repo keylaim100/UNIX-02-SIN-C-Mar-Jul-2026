@@ -66,3 +66,7 @@ tail
 #example: head -n 5 alpha.txt 
 #         tail -n 5 alpha.txt
 
+#is used to duplicate files or directories from one location to another
+cp
+#example: copies the system's password file into your current directory
+cp /etc/passwd .
