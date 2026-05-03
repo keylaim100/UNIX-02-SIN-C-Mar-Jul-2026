@@ -17,6 +17,24 @@ stat .
 #Change: 2026-05-03 17:42:33.758069089 +0000
 # Birth: 2026-05-03 17:42:33.758069089 +0000
 
+# change directory to home directory from any locaton of my operative system
+cd 
+# asbosulte route
+cd /home/codespace
+#shortcut
+ cd ~
+#enviroment variable
+echo $HOME
+#command displays the username
+whoami
+#lists all files and directories in long format, sorted by their modification time
+ls -lt
+#opens the comprehensive reference manual for the list directory contents utility
+man ls
+#lists the first five entries within the /dev directory, which contains special files
+ls /dev | head -5
+#lists the last five entries within the /etc directory, which traditionally stores the system-wide configuration files and subdirectories for the operating system
+ls /etc | tail -5
 
 # Update the repositories and install the necessary tools (compilers, libraries, and emulator) to compile and test a Linux kernel from scratch
 sudo apt update
