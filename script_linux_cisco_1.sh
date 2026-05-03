@@ -21,3 +21,10 @@ aptitude -vvv moo
 
 #outputs the full absolute path of the current directory
 pwd
+
+#shifts your current terminal session to a different location
+cd
+#absolute route: allows you to specify the exact location of a directory. It always starts in the root directory, therefore it always starts with the / character
+cd /workspaces/UNIX-02-SIN-C-Mar-Jul-2026
+#relative route: It locates a file in relation to the user's current location in the file system. Relative paths do not start with the / character, they start with the name of a directory
+cd documentos/
