@@ -28,3 +28,7 @@ cd
 cd /workspaces/UNIX-02-SIN-C-Mar-Jul-2026
 #relative route: It locates a file in relation to the user's current location in the file system. Relative paths do not start with the / character, they start with the name of a directory
 cd documentos/
+#moves your current session one level up in the filesystem
+cd..
+#changes your current directory to your user's home directory
+cd ~
