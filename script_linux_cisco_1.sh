@@ -38,3 +38,8 @@ ls -lt /var/log #shows the long-format list of logs sorted by modification time,
 ls -l -S /var/log  #provides the long-format list of logs sorted by file size, showing the largest log files first to help identify which ones are consuming the most disk space
 ls -lSr /var/log #lists the logs in long format but reverses the size sort, displaying the smallest files first and the largest ones at the bottom of the list
 ls -r /var/log   # simply lists the names of the files in the log directory in reverse alphabetical order without providing extra file details
+
+#allows you to temporarily act as a different user by creating a new shell
+su
+#allows a user to run a command as another user without having to create a new shell
+sudo
