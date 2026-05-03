@@ -49,3 +49,10 @@ chmod
 #grants the owner (user) of the file named hello.sh the permission to execute it as a program
 chmod u+x hello.sh
 ./ #This indicates that the 'command' must be executed from the current directory
+
+#is used to change the user and/or group ownership of a file or directory.
+chown
+#changes the ownership of the file hello.sh to the root user
+sudo chown root hello.sh
+#runs the script named hello.sh located in the current directory with root privileges
+sudo ./hello.sh
