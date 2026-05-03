@@ -18,3 +18,6 @@ ls -lr
 aptitude -v moo
 aptitude -vv moo
 aptitude -vvv moo
+
+#outputs the full absolute path of the current directory
+pwd
