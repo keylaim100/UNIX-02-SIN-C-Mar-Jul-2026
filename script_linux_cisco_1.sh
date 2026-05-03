@@ -13,3 +13,8 @@ ls -l
 ls -r
 #displays directory contents in a long-listing format while reversing the alphabetical sorting order
 ls -lr 
+
+#by adding -v you see another type of responses
+aptitude -v moo
+aptitude -vv moo
+aptitude -vvv moo
