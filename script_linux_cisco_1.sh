@@ -43,3 +43,9 @@ ls -r /var/log   # simply lists the names of the files in the log directory in r
 su
 #allows a user to run a command as another user without having to create a new shell
 sudo
+
+#is used to change the access permissions of files and directories, controlling who can read (r), write (w), or execute (x) them
+chmod
+#grants the owner (user) of the file named hello.sh the permission to execute it as a program
+chmod u+x hello.sh
+./ #This indicates that the 'command' must be executed from the current directory
