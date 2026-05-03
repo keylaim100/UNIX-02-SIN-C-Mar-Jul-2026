@@ -56,3 +56,13 @@ chown
 sudo chown root hello.sh
 #runs the script named hello.sh located in the current directory with root privileges
 sudo ./hello.sh
+
+#use to quickly view the content of small files
+cat
+#they are used to view a selected number of lines from the top or bottom of a file
+head
+tail 
+-n # with the commands can be used to specify the number of lines to display
+#example: head -n 5 alpha.txt 
+#         tail -n 5 alpha.txt
+
