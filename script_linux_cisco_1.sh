@@ -70,3 +70,17 @@ tail
 cp
 #example: copies the system's password file into your current directory
 cp /etc/passwd .
+
+#used to convert and copy files, primarily for low-level tasks like backing up entire drives or creating bootable USB sticks
+dd
+#It can be used to clone or wipe entire disks or partitions.  
+#It can be used to copy raw data to removable devices such as USB devices or CD ROMs.  
+#It can be used to create a backup and restore the MBR (Master Boot Record).  
+#It can be used to create a file of a specific size filled with binary zeros, which can be used as a swap file (virtual memory).
+
+#creates a 50 MB file filled with zeros
+dd if=/dev/zero of=/tmp/swapex bs=1M count=50
+#if=/dev/zero: The input file. /dev/zero is a special file that provides an endless stream of null characters (zeros).
+#of=/tmp/swapex: The output file. It creates (or overwrites) a file named swapex in the /tmp directory.
+#bs=1M: Sets the block size to 1 Megabyte. This tells the command to read and write in 1 MB chunks.
+#count=50: Tells the command to copy exactly 50 blocks.
