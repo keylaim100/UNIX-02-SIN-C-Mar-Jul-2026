@@ -9,3 +9,6 @@ cat /etc/passwd | head -10
 #files and directories inherit the GID and UID
 touch test.txt
 ls -la
+#see all the system groups / groups to which the current user belongs
+cat /etc/group | head -10
+groups $USER
