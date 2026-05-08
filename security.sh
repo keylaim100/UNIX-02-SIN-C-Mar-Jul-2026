@@ -33,3 +33,7 @@ addgroup diseno
 addgroup -gid 2100 marketing
 addgroup --system cache_web
 grep "diseño\|marketing\|cache_web" /etc/group
+
+#appends the specified user to supplementary groups without removing them from their existing ones
+usermod -aG desarrolladores root
+usermod -aG diseno root
