@@ -25,3 +25,5 @@ groupadd -g 2000 operaciones
 groupadd --system servicios_web
 
 grep -E "desarrolladores|operaciones|servicios_web" /etc/group
+#display the predefined range limits for both system and regular Group IDs
+grep -E "GID_MIN|GID_MAX|SYS_GID" /etc/login.defs
