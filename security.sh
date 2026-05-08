@@ -6,3 +6,6 @@ groups
 cat /etc/passwd
 # retrieves the first 10 lines of the system's user database
 cat /etc/passwd | head -10
+#files and directories inherit the GID and UID
+touch test.txt
+ls -la
