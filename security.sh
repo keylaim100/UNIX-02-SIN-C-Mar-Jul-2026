@@ -16,3 +16,12 @@ groups $USER
 id -u #user ID
 11  id -g #main group ID
 12  id -G #all the groups
+# ~ :home
+mkdir ~/proyecto_unix/ #new directory 
+ls -la ~/proyecto_unix/
+
+groupadd desarrolladores 
+groupadd -g 2000 operaciones 
+groupadd --system servicios_web
+
+grep -E "desarrolladores|operaciones|servicios_web" /etc/group
