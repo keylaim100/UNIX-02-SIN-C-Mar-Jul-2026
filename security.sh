@@ -27,3 +27,9 @@ groupadd --system servicios_web
 grep -E "desarrolladores|operaciones|servicios_web" /etc/group
 #display the predefined range limits for both system and regular Group IDs
 grep -E "GID_MIN|GID_MAX|SYS_GID" /etc/login.defs
+
+#The user is creating standard, manual-GID, and system groups using the addgroup utility and verifying them in the system group file
+addgroup diseno
+addgroup -gid 2100 marketing
+addgroup --system cache_web
+grep "diseño\|marketing\|cache_web" /etc/group
