@@ -72,3 +72,13 @@ chgrp desarrolladores ~/lab_chgrp/proyectos/app.py
 
 #It assigns both the config.json file and the informe.txt file to the diseno group
 chgrp diseno ~/lab_chgrp/proyectos/config.json ~/lab_chgrp/reportes/informe.txt
+
+#It ensures that scripts/ and everything within it (like deploy.sh) now belongs to the desarrolladores group
+chgrp -R desarrolladores ~/lab_chgrp/scripts/
+#confirm that every file inside that folder now belongs to the desarrolladores group
+ls -laR ~/lab_chgrp/scripts
+#provides a verbose (detailed) report of every action taken
+chgrp -Rv diseno ~/lab_chgrp/reportes/
+#result
+#el grupo de '/root/lab_chgrp/reportes/informe.txt' permanece como diseno
+#cambiado el grupo de '/root/lab_chgrp/reportes/' de root a diseno
