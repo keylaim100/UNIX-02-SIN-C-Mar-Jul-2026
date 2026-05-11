@@ -45,3 +45,7 @@ grep "desarrolladores\|diseno" /etc/group
 adduser root marketing
 #displays the UID GID and Groups associated with a specific user
 id root
+
+groupadd grupo_temporal #Creates a new group named on the system
+usermod -aG grupo_temporal root #Appends the user root to the supplementary group grupo_temporal without removing them from existing groups
+id root
