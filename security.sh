@@ -52,3 +52,6 @@ id root
 
 #this replaces all of root's previous secondary groups with only desarrolladores
 usermod -G desarrolladores root
+
+#adds the root user to multiple groups at once
+usermod -aG diseno,marketing,grupo_temporal root
