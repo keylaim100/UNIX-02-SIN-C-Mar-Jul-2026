@@ -66,3 +66,6 @@ touch ~/lab_chgrp/scripts/deploy.sh
 #list the contents of two specific directories with detailed permission information
 ls -la ~/lab_chgrp/reportes/
 ls -la ~/lab_chgrp/proyectos/
+
+#It assigns the app.py file to the desarrolladores group
+chgrp desarrolladores ~/lab_chgrp/proyectos/app.py
