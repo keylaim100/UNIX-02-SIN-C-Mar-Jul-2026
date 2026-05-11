@@ -49,3 +49,6 @@ id root
 groupadd grupo_temporal #Creates a new group named on the system
 usermod -aG grupo_temporal root #Appends the user root to the supplementary group grupo_temporal without removing them from existing groups
 id root
+
+#this replaces all of root's previous secondary groups with only desarrolladores
+usermod -G desarrolladores root
