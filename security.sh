@@ -69,3 +69,6 @@ ls -la ~/lab_chgrp/proyectos/
 
 #It assigns the app.py file to the desarrolladores group
 chgrp desarrolladores ~/lab_chgrp/proyectos/app.py
+
+#It assigns both the config.json file and the informe.txt file to the diseno group
+chgrp diseno ~/lab_chgrp/proyectos/config.json ~/lab_chgrp/reportes/informe.txt
