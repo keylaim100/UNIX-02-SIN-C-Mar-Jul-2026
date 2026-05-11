@@ -55,3 +55,14 @@ usermod -G desarrolladores root
 
 #adds the root user to multiple groups at once
 usermod -aG diseno,marketing,grupo_temporal root
+
+#set up a directory structure and create files for a laboratory environment
+mkdir -p ~/lab_chgrp/{proyectos,reportes,scripts}
+touch ~/lab_chgrp/proyectos/app.py
+touch ~/lab_chgrp/proyectos/config.json
+touch ~/lab_chgrp/reportes/informe.txt
+touch ~/lab_chgrp/scripts/deploy.sh
+
+#list the contents of two specific directories with detailed permission information
+ls -la ~/lab_chgrp/reportes/
+ls -la ~/lab_chgrp/proyectos/
