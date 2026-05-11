@@ -40,3 +40,8 @@ usermod -aG diseno root
 
 #The command searches for specific group names within the system's group definition file
 grep "desarrolladores\|diseno" /etc/group
+
+#This command adds an existing user to a specific group
+adduser root marketing
+#displays the UID GID and Groups associated with a specific user
+id root
