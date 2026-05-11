@@ -37,3 +37,6 @@ grep "diseño\|marketing\|cache_web" /etc/group
 #appends the specified user to supplementary groups without removing them from their existing ones
 usermod -aG desarrolladores root
 usermod -aG diseno root
+
+#The command searches for specific group names within the system's group definition file
+grep "desarrolladores\|diseno" /etc/group
