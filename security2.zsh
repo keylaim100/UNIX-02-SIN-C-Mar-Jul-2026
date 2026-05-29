@@ -36,3 +36,16 @@ id -gn
 #a file is created and it is verified that the group is desarrolladores
 touch ~/despues_de_newgrp.txt
 ls -la ~/despues_de_newgrp
+
+#a directory is created with developers group
+mkdir -p ~/proyecto_dev/src
+# verification
+ls -la ~/
+
+#newgrp creates a subshell
+echo "PID del shell actual: $$"
+#PID del shell actual: 454
+echo "PID dentro de newgrp: $$"
+#PID dentro de newgrp: 32829
+
+#The PID is different - it is a child process
