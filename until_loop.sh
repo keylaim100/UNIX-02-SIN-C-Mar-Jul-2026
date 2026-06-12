@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE="output.txt"
+FILE="output1.txt"
 #creates a variable named FILE and assigns the filename output.txt to it
 touch "${FILE}"
 #creates the file if it does not exist. If it already exists, updates its timestamp
