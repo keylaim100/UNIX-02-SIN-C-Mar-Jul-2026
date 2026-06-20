@@ -16,3 +16,12 @@ touch test.csv
 echo -e "hola1,chao1\nhola2,chao2\nhola3,chao3" >> test.csv
 awk -F',' '{print $1}' test.csv
 
+head log.txt
+awk 'NR < 10' log.txt
+
+#search for all lines that contain the IP address 42.236.10.117 in log.txt
+grep "42.236.10.117" log.txt
+#print the seventh column from every line in log.txt
+awk '{print $7}' log.txt
+#find the lines with the IP address and then print only the seventh column
+grep "42.236.10.117" log.txt | awk '{print $7}'
